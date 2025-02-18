@@ -53,6 +53,12 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
+        <configuration>
+        <includes>
+          <include>**/Tests/*.java</include> <!-- Ensure that the path matches your test class -->
+        </includes>
+        <testNGArtifactName>org.testng:testng</testNGArtifactName>
+      </configuration>
       </plugin>
     </plugins>
   </build>
