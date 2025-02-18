@@ -13,7 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ResumeBaseTest {
+public class ResumeTest {
 
 	private WebDriver driver;
 	private ConfigLoader config;

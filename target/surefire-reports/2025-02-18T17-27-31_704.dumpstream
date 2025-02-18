@@ -1,0 +1,4 @@
+# Created at 2025-02-18T17:27:32.098
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Sumant\Naukriresume\sumanth\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
