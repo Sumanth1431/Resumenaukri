@@ -34,7 +34,7 @@ public class ResumePage {
         //otherwise we can use normally through sendkeys  fileupload and all
 		try {
 	        // Execute the AutoIT script to handle the file picker dialog
-	        String autoItScript = "C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\updated resumes\\2 pageresume\\Sumanth M B_QA_3.7.pdf";
+	        String autoItScript = "C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\autoit\\autofile.exe";
 	        Runtime.getRuntime().exec(autoItScript);
 	    } catch (IOException e) {
 	        e.printStackTrace();
