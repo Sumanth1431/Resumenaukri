@@ -1,5 +1,6 @@
 package Pages;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.By;
@@ -16,14 +17,14 @@ public class ResumePage {
     By resumefield = By.cssSelector("input[value='Update resume']");  // Update to a file input field locator
 
     // Locator for the uploaded resume filename (change as needed)
-    By uploadedFileNameLocator = By.xpath("//span[contains(text(), 'Pavan_3.5+YOE_FrontEnd.pdf')]"); // A more general locator to check file upload
+    By uploadedFileNameLocator = By.xpath("//span[contains(text(), 'Sumanth M B_QA_3.7.pdf')]"); // A more general locator to check file upload
 
     public ResumePage(WebDriver driver) {
         this.driver = driver;
     }
 
     // Method to upload resume
-    public void updateresume(String resumefilepath) {
+    public void updateresume(String resumefilepath) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement resumeElement = wait.until(ExpectedConditions.elementToBeClickable(resumefield));
 
@@ -32,13 +33,35 @@ public class ResumePage {
 		
         //used here autoit to upload file because it type button for uploadresume other than type file we need to use autoit tool
         //otherwise we can use normally through sendkeys  fileupload and all
-		try {
-	        // Execute the AutoIT script to handle the file picker dialog
-	        String autoItScript = "C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\autoit\\autofile.exe";
-	        Runtime.getRuntime().exec(autoItScript);
-	    } catch (IOException e) {
+        
+        
+        File file = new File("C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\updated resumes\\2 pageresume\\Sumanth M B_QA_3.7.pdf");
+        if (!file.exists()) {
+            System.out.println("❌ File not found!");
+        }
+
+        Thread.sleep(2000);
+        try {
+        	
+        
+        String resumefilePath = "C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\updated resumes\\2 pageresume\\Sumanth M B_QA_3.7.pdf";
+        String autoItPath = "C:\\\\Users\\\\jshar\\\\OneDrive\\\\Desktop\\\\Sumant docs\\\\autoit\\\\autofile.exe";
+
+        String command = "\"" + autoItPath + "\" \"" + resumefilePath + "\"";
+        System.out.println("Running: " + command);
+        Runtime.getRuntime().exec(command);
+        }catch (IOException e) {
 	        e.printStackTrace();
 	    }
+        
+        
+//		try {
+//	        // Execute the AutoIT script to handle the file picker dialog
+//	        String autoItScript = "C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\autoit\\autofile.exe";
+//	        Runtime.getRuntime().exec(autoItScript);
+//	    } catch (IOException e) {
+//	        e.printStackTrace();
+//	    }
       
     }
     

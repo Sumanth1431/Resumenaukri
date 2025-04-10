@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T11:15:22 IST" name="Suite" finished-at="2025-04-10T11:15:22 IST" duration-ms="55">
+  <suite started-at="2025-04-10T16:26:16 IST" name="Default suite" finished-at="2025-04-10T16:26:36 IST" duration-ms="19916">
     <groups>
     </groups>
-    <test started-at="2025-04-10T11:15:22 IST" name="Test" finished-at="2025-04-10T11:15:22 IST" duration-ms="55">
-      <class name="Tests.SimpleTest">
-        <test-method signature="simpleTest()[pri:0, instance:Tests.SimpleTest@3f6f6701]" started-at="2025-04-10T11:15:22 IST" name="simpleTest" finished-at="2025-04-10T11:15:22 IST" duration-ms="11" status="PASS">
+    <test started-at="2025-04-10T16:26:16 IST" name="Default test" finished-at="2025-04-10T16:26:36 IST" duration-ms="19916">
+      <class name="Tests.ResumeTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Tests.ResumeTest@130c12b7]" started-at="2025-04-10T16:26:16 IST" name="Setup" finished-at="2025-04-10T16:26:18 IST" duration-ms="1546" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- simpleTest -->
-      </class> <!-- Tests.SimpleTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Setup -->
+        <test-method signature="testlogin()[pri:0, instance:Tests.ResumeTest@130c12b7]" started-at="2025-04-10T16:26:18 IST" name="testlogin" finished-at="2025-04-10T16:26:36 IST" duration-ms="18328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+      </class> <!-- Tests.ResumeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

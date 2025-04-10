@@ -26,12 +26,12 @@ public class ResumeTest {
 		// Initialize WebDriver
 		driver = new ChromeDriver();
 		// Load configuration properties
-		config = new ConfigLoader("src/main/java/resources/config.properties");
+		config = new ConfigLoader("src\\main\\java\\resources\\config.properties");
 
 	}
 
 	@Test
-	public void testlogin() {
+	public void testlogin() throws InterruptedException {
 
 		// Open the login URL
 		driver.get(config.getProperty("url"));
@@ -45,10 +45,11 @@ public class ResumeTest {
 
 		if (errorMessage != null) {
 			System.out.println("Login failed: " + errorMessage);
-			AssertJUnit.fail("Login failed: " + errorMessage); // Fail the test if login is unsuccessful
+			Assert.fail("Login failed: " + errorMessage); // Fail the test if login is unsuccessful
+		
 		} else {
 			// If login is successful, update the resume
-			resumePage.updateresume(config.getProperty("resumepath"));
+			resumePage.updateresume(config.getProperty("resumefilepath"));
 			System.out.println("Login successful and resume updated.");
 		}
 
