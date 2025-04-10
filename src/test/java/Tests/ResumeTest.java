@@ -1,5 +1,7 @@
 package Tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,7 +45,7 @@ public class ResumeTest {
 
 		if (errorMessage != null) {
 			System.out.println("Login failed: " + errorMessage);
-			Assert.fail("Login failed: " + errorMessage); // Fail the test if login is unsuccessful
+			AssertJUnit.fail("Login failed: " + errorMessage); // Fail the test if login is unsuccessful
 		} else {
 			// If login is successful, update the resume
 			resumePage.updateresume(config.getProperty("resumepath"));
