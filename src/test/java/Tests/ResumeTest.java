@@ -36,7 +36,7 @@ public class ResumeTest {
 
 		// Create page objects
 		LoginPage loginPage = new LoginPage(driver);
-		ResumePage resumePage = new ResumePage(driver);
+		ResumePage resumePage = new ResumePage(driver); //
 
 		// Try to login with the first user's credentials
 		String errorMessage = loginPage.login(config.getProperty("username"), config.getProperty("password"));

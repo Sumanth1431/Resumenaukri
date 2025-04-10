@@ -28,13 +28,13 @@ public class ResumePage {
         WebElement resumeElement = wait.until(ExpectedConditions.elementToBeClickable(resumefield));
 
         resumeElement.click();
-		//return resumefilepath;
+		//freturn resumefilepath;
 		
         //used here autoit to upload file because it type button for uploadresume other than type file we need to use autoit tool
         //otherwise we can use normally through sendkeys  fileupload and all
 		try {
 	        // Execute the AutoIT script to handle the file picker dialog
-	        String autoItScript = "C:\\Users\\jshar\\Downloads\\autofile.exe";
+	        String autoItScript = "C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\updated resumes\\2 pageresume\\Sumanth M B_QA_3.7.pdf";
 	        Runtime.getRuntime().exec(autoItScript);
 	    } catch (IOException e) {
 	        e.printStackTrace();

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
 
 	WebDriver driver;
-	// div[@class='nI-gNb-log-reg']//a[1]
+	
 	By loginview = By.id("login_Layer");
 	By usernameField = By.xpath("//*[contains(@placeholder,'Username')]"); // Replace with actual ID
 	By passwordField = By.xpath("//*[contains(@placeholder,'password')]"); // Replace with actual ID

@@ -13,7 +13,7 @@ public class ConfigLoader {
             FileInputStream input = new FileInputStream(configFilePath);
             properties.load(input);
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); 
         }
     }
 
