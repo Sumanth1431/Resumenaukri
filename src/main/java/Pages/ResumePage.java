@@ -25,7 +25,7 @@ public class ResumePage {
 
     // Method to upload resume
     public void updateresume(String resumefilepath) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement resumeElement = wait.until(ExpectedConditions.elementToBeClickable(resumefield));
 
         resumeElement.click();

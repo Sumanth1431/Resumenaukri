@@ -2,6 +2,9 @@ package Tests;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
+import java.time.LocalDateTime;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -51,6 +54,8 @@ public class ResumeTest {
 			// If login is successful, update the resume
 			resumePage.updateresume(config.getProperty("resumefilepath"));
 			System.out.println("Login successful and resume updated.");
+			System.out.println("✅ Resume upload attempted at: " + LocalDateTime.now());
+
 		}
 
 	}
