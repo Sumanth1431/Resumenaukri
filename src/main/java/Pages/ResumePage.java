@@ -35,7 +35,7 @@ public class ResumePage {
         //otherwise we can use normally through sendkeys  fileupload and all
         
         
-        File file = new File("C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\updated resumes\\2 pageresume\\Sumanth M B_QA_3.7.pdf");
+        File file = new File("E:\\Resume\\Sumanth M B_QA_3.7.pdf");
         if (!file.exists()) {
             System.out.println("❌ File not found!");
         }
@@ -44,8 +44,10 @@ public class ResumePage {
         try {
         	
         
-        String resumefilePath = "C:\\Users\\jshar\\OneDrive\\Desktop\\Sumant docs\\updated resumes\\2 pageresume\\Sumanth M B_QA_3.7.pdf";
-        String autoItPath = "C:\\\\Users\\\\jshar\\\\OneDrive\\\\Desktop\\\\Sumant docs\\\\autoit\\\\autofile.exe";
+        String resumefilePath = "E:\\Resume\\Sumanth M B_QA_3.7.pdf";
+        String autoItPath = "D:\\\\Applications\\\\Autoit\\\\autofile.exe";
+        
+        
 
         String command = "\"" + autoItPath + "\" \"" + resumefilePath + "\"";
         System.out.println("Running: " + command);
