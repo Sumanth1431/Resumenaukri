@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import Pages.ConfigLoader;
 import Pages.LoginPage;
@@ -26,6 +27,9 @@ public class ResumeTest {
 	@BeforeMethod
 	public void Setup() {
 
+		
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--headless");
 		// Initialize WebDriver
 		driver = new ChromeDriver();
 		// Load configuration properties
