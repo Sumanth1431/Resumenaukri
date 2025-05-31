@@ -7,6 +7,7 @@
         <methods>
           <include name="Setup"/>
           <include name="testlogin"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- Tests.ResumeTest -->
     </classes>
