@@ -31,7 +31,7 @@ public class ResumeTest {
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--headless");
 		// Initialize WebDriver
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(opt);
 		// Load configuration properties
 		config = new ConfigLoader("src\\main\\java\\resources\\config.properties");
 
